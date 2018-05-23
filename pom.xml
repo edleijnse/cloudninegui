@@ -8,7 +8,7 @@
     <name>cloudninegui</name>
 
     <packaging>jar</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2</version>
     
     <organization>
         <!-- Used as the 'Vendor' for JNLP generation -->
@@ -69,7 +69,7 @@
         <dependency>
             <groupId>com.github.edleijnse</groupId>
             <artifactId>filterpictures</artifactId>
-            <version>R1.0.2.20180522</version>
+            <version>R1.0.3.20180523</version>
         </dependency>
 
         <!-- MigLayout -->
