@@ -1,6 +1,7 @@
 package cloudninegui;
 
 
+import filterpictures.ExtractPictureMetaData;
 import javafx.application.HostServices;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,8 +17,8 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -73,6 +74,16 @@ public class FileBrowserDialogController implements Initializable {
         //System.out.println("choosen directory: " + directoryChooser.showDialog(new Stage()));
 
         directoriesList.setItems(dataDirectories);
+
+        String csvFile = myChoosenDirectory + "/MyLightroom.csv";
+
+        ExtractPictureMetaData extractPictureMetaData;
+        extractPictureMetaData = new ExtractPictureMetaData(myChoosenDirectory, csvFile);
+        try {
+            extractPictureMetaData.createCSVFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

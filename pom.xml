@@ -18,8 +18,8 @@
     <properties>
         <slf4j.version>1.7.12</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <build>
@@ -56,12 +56,22 @@
 
     <dependencies>
         <dependency>
-            <groupId>leijnse.info</groupId>
-            <artifactId>cloudnine</artifactId>
-            <version>1.0.1</version>
-            <type>jar</type>
+            <groupId>com.adobe.xmp</groupId>
+            <artifactId>xmpcore</artifactId>
+            <version>5.1.2</version>
         </dependency>
-    
+        <dependency>
+            <groupId>com.drewnoakes</groupId>
+            <artifactId>metadata-extractor</artifactId>
+            <version>2.11.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.edleijnse</groupId>
+            <artifactId>filterpictures</artifactId>
+            <version>R1.0.2.20180522</version>
+        </dependency>
+
         <!-- MigLayout -->
 
         <dependency>
@@ -106,6 +116,9 @@
             <artifactId>xstream</artifactId>
             <version>1.4.10</version>
         </dependency>
+
+
+
 
     </dependencies>
 

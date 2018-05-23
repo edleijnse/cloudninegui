@@ -41,7 +41,7 @@ public class FileBrowserDialogMain extends Application {
 
         this.setHostServices(controller.getHostServices());
 
-        primaryStage.setTitle("Filebrowser Dialog");
+        primaryStage.setTitle("Filterpictures CSV Extractor");
         primaryStage.setScene(new Scene(rootNode, 500, 375));
         primaryStage.show();
     }
