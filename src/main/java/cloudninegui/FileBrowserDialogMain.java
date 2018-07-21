@@ -9,6 +9,9 @@ import javafx.stage.Stage;
 
 public class FileBrowserDialogMain extends Application {
 
+    // Starten über Terminal:
+    // java -cp cloudninegui.jar cloudninegui.FileBrowserDialogMain
+
     private HostServices hostServices;
 
     String myFavouriteDirectory = "/Users/Shared/favoriteDirectoriesFile";

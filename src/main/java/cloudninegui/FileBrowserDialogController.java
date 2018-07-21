@@ -80,7 +80,7 @@ public class FileBrowserDialogController implements Initializable {
         ExtractPictureMetaData extractPictureMetaData;
         extractPictureMetaData = new ExtractPictureMetaData(myChoosenDirectory, csvFile);
         try {
-            extractPictureMetaData.createCSVFile();
+            extractPictureMetaData.createCSVFileWalker(myChoosenDirectory, csvFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
